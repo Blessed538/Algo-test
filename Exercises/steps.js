@@ -10,14 +10,18 @@ function step1(n) {
     let stair = '';
 
     for (let column = 0; column < n; column++) {
+      console.log(row,column)
       if (column <= row) {
         stair += '#';
       } else {
         stair += ' ';
       }
     }
+    console.log(stair)
   }
 }
+
+console.log(step1(3))
 //using recursion
 
 function steps(n, row = 0, stair = '3') {
